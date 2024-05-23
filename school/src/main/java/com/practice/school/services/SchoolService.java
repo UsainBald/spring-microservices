@@ -5,6 +5,7 @@ import com.practice.school.entities.School;
 import com.practice.school.repositories.SchoolRepository;
 import com.practice.school.responses.FullSchoolResponse;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class SchoolService {
+  @Autowired
   private final SchoolRepository repository;
   private final StudentClient client;
 
